@@ -102,7 +102,15 @@ You can now see that the Wazuh File Integrity monitoring system is actively repo
 
 ---
 
+## Resources
+
+- [File Integrity Monitoring - Proof of Concept Guide](https://documentation.wazuh.com/current/proof-of-concept-guide/poc-file-integrity-monitoring.html) - Official Wazuh documentation for setting up and testing file integrity monitoring.
+
+
+
 # Thank you.
+
+
 
 
 
