@@ -9,10 +9,6 @@ To provide a clear and repeatable demonstration of Wazuh’s FIM capability by f
 ---
 
 ## Environment Setup
-
-![WhatsApp Image 2025-07-16 at 03 03 32](https://github.com/user-attachments/assets/1e2672d4-0195-497d-bc73-4cab8b8ac3bb)
-
-
 - **Wazuh Manager**: Hosted on a cloud server (e.g., Linode, AWS). I hosted my cloud server in Linode.
   A documentation for deploying Wazuh Manager can be found here: [Wazuh Docker SIEM Setup](https://github.com/rohithaider/wazuh-docker-siem-setup)
 - **Wazuh Agent**: Installed on Ubuntu VM & Windows 7 (VirtualBox)
