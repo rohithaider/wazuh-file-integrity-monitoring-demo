@@ -1,5 +1,4 @@
-# wazuh-fim-attack-demo
-# Wazuh File Integrity Monitoring (FIM) - Attack Demonstration
+# Wazuh File Integrity Monitoring (FIM) - Demonstration
 
 This repository contains configuration files, sample logs, and step-by-step procedures to demonstrate File Integrity Monitoring (FIM) using Wazuh. It simulates real-world attacks to showcase how Wazuh detects file modifications, additions, and deletions on endpoints.
 
