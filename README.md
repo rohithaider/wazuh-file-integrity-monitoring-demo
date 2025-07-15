@@ -1,24 +1,20 @@
 # Wazuh File Integrity Monitoring (FIM) - Demonstration
 
-This repository contains configuration files, sample logs, and step-by-step procedures to demonstrate File Integrity Monitoring (FIM) using Wazuh. It simulates real-world attacks to showcase how Wazuh detects file modifications, additions, and deletions on endpoints.
+This repository contains configuration files, sample logs, and step-by-step procedures to demonstrate File Integrity Monitoring (FIM) using Wazuh. It shows how Wazuh detects and logs file modifications, creations, and deletions on monitored endpoints in real time.
 
 ## Objective
 
-To provide a clear and repeatable demonstration of Wazuh’s FIM capability by executing various file-based attacks and observing alert generation within the Wazuh dashboard.
+To provide a clear and repeatable demonstration of Wazuh’s FIM capability by file modification and observing alert generation within the Wazuh dashboard.
 
 ---
 
 ## Environment Setup
 
 - **Wazuh Manager**: Hosted on a cloud server (e.g., Linode, AWS). I hosted my cloud server in Linode.
-  A Documentation for deploying Wazuh Manager can be found here:
-  
-  ```url
-  https://github.com/rohithaider/wazuh-docker-siem-setup
-  ```
+  A documentation for deploying Wazuh Manager can be found here: [Wazuh Docker SIEM Setup](https://github.com/rohithaider/wazuh-docker-siem-setup)
 - **Wazuh Agent**: Installed on Ubuntu VM & Windows 7 (VirtualBox)
 - **Version**: Wazuh 4.12+
-- **Log Collection**: Direct agent-to-manager communication (no Filebeat)
+- **Log Collection**: Direct agent-to-manager communication ```(no Filebeat)```
 
 ---
 
