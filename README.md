@@ -68,6 +68,7 @@ Now let's go the Wazuh dashboard and open the Ubuntu agent. From there go to the
 <img width="1213" height="554" alt="image" src="https://github.com/user-attachments/assets/4d20e839-ef8b-4e3a-8e29-50a38eeb5d1f" />
 
 Here you can see that the events are showing the in the file integrity monitoring. 
+
 <img width="1213" height="554" alt="image" src="https://github.com/user-attachments/assets/004271dc-054d-48e4-9629-eac156130859" />
 
 
