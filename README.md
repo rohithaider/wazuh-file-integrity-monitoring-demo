@@ -70,7 +70,7 @@ Here you can see that the events are showing the in the file integrity monitorin
 <img width="1211" height="547" alt="image" src="https://github.com/user-attachments/assets/6d23f1ec-629d-42be-b70f-39fbc25c27b2" />
 
 
-# Wazuh Configuration for File Integrity Monitoring in Ubuntu.
+# Wazuh Configuration for File Integrity Monitoring in Windows.
 
 First edit the ossec.conf in administrative mode. ```C:\Program Files (x86)\ossec-agent\ossec.conf```.
 
