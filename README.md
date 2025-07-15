@@ -42,7 +42,7 @@ Finally, restart the Wazuh-agent to apply the change:
 ```bash
 sudo systemctl restart wazuh-agent
 ```
-## Testing the configuration
+## Testing the configuration in Ubuntu 
 I created a text file inside the monitored directory and waited for about 5 seconds to give Wazuh time to detect the creation event. After that, I opened the file, added some content to it, and saved the changes. Again, I waited for another 5 seconds to allow the file modification to be picked up. Finally, I deleted the text file from the monitored directory and waited a few more seconds so the deletion event could be captured by the File Integrity Monitoring system.
 
 1. Creating the file
@@ -74,7 +74,32 @@ Here you can see that the events are showing the in the file integrity monitorin
 
 # Wazuh Configuration for File Integrity Monitoring in Ubuntu.
 
-First edit the ossec.conf file in ```C:\Program Files (x86)\ossec-agent\ossec.conf```
+First edit the ossec.conf in administrative mode. ```C:\Program Files (x86)\ossec-agent\ossec.conf```.
+
+<img width="997" height="645" alt="image" src="https://github.com/user-attachments/assets/ded998fe-6773-4a3a-b4f7-53f374109e74" />
+
+, and add this block 
+
+```bash
+<directories check_all="yes" report_changes="yes" whodata="yes" realtime="yes">C:\Users\<USER_NAME>\Desktop</directories>
+```
+
+note: I added ```whodata="yes"``` to see who modifies data. 
+
+<img width="997" height="645" alt="image" src="https://github.com/user-attachments/assets/3fe6c8fc-f84f-4bfd-b394-4162dadad2df" />
+
+Finally, restart wazuh agent in windows 10. 
+
+```bash
+<directories check_all="yes" report_changes="yes" realtime="yes">C:\Users\<USER_NAME>\Desktop</directories>
+```
+
+#NOTE: CHANGE YOUR USERNAME ABOVE!
+
+## Testing the configuration in Windows 10. 
+
+<img width="1359" height="654" alt="image" src="https://github.com/user-attachments/assets/1aaf9caa-437e-41f5-b5df-9e76685cb89b" />
+
 
 
 
