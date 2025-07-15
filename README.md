@@ -11,7 +11,7 @@ To provide a clear and repeatable demonstration of Wazuh’s FIM capability by f
 ## Environment Setup
 - **Wazuh Manager**: Hosted on a cloud server (e.g., Linode, AWS). I hosted my cloud server in Linode.
   A documentation for deploying Wazuh Manager can be found here: [Wazuh Docker SIEM Setup](https://github.com/rohithaider/wazuh-docker-siem-setup)
-- **Wazuh Agent**: Installed on Ubuntu VM & Windows 7 (VirtualBox)
+- **Wazuh Agent**: Installed on Ubuntu VM & Windows 10 (VirtualBox)
 - **Version**: Wazuh 4.12+
 - **Log Collection**: Direct agent-to-manager communication ```(no Filebeat)```
 
